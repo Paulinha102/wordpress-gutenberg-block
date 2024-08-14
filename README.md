@@ -6,7 +6,7 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 ## Step 1: Create a New WordPress Plugin
 **In the terminal, navigate to the plugins directory of your WordPress installation and run the following command:**
 
-	npx @wordpress/create-block waves
+	npx @wordpress/create-block block-waves
 
 ## Step 2: Navigate to the Plugin Directory
 **Once the plugin is created, change to the plugin directory:**
