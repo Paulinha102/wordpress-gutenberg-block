@@ -1,11 +1,12 @@
 <?php
 /**
  * Plugin Name:       Block Waves
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       Wave blocks create in course WordPress Gutenberg Block Development with React JS and PHP.
  * Requires at least: 6.1
  * Requires PHP:      7.0
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            Paula Santos
+ * Author URI:        https://www.linkedin.com/in/paula--santos/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       block-waves
@@ -25,6 +26,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
 function create_block_block_waves_block_init() {
-	register_block_type( __DIR__ . '/build' );
+	register_block_type( __DIR__ . '/build/blocks/curvy' );
 }
 add_action( 'init', 'create_block_block_waves_block_init' );

@@ -27,6 +27,7 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 ## Step 6: Add the New Waves Block
 **In the page editor, look for the "Waves" block in the block library and add it to your page.**
 
-
+## Step 7: Creat a directory in src -> blocks/curvy 
+**Move the following files into the curvy directory: block.json, edit.js, editor.scss, index.js, save.js, style.scss, and view.js.**
 
 
