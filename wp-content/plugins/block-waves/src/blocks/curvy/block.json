@@ -1,15 +1,21 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/block-waves",
+	"name": "block-waves/curvy",
 	"version": "0.1.0",
 	"title": "Block Waves",
 	"category": "widgets",
 	"icon": "smiley",
-	"description": "Example block scaffolded with Create Block tool.",
+	"description": "Curve shape dividers to make dividing page content more interesting",
 	"example": {},
 	"supports": {
 		"html": false
+	},
+  	"attributes": {
+	  "enableTopCurve": {
+		"type": "boolean",
+		"default": true
+	  }
 	},
 	"textdomain": "block-waves",
 	"editorScript": "file:./index.js",

@@ -30,4 +30,9 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 ## Step 7: Creat a directory in src -> blocks/curvy 
 **Move the following files into the curvy directory: block.json, edit.js, editor.scss, index.js, save.js, style.scss, and view.js.**
 
+## Step 8: Implement the side panel
+**Add a PanelBody and create a ToggleControl for the "Top Curve" option <br>
+• In this step, you will implement a side panel using Gutenberg components.<br>
+• Add a <PanelBody> to group related controls.<br>
+• Inside the PanelBody, create a <ToggleControl> to allow users to enable or disable the "Top Curve" setting.**
 

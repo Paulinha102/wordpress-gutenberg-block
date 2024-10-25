@@ -11,7 +11,8 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-block-editor/#useblockprops
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, InspectorControls } from '@wordpress/block-editor';
+import { PanelBody, ToggleControl } from '@wordpress/components';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,10 +30,30 @@ import './editor.scss';
  *
  * @return {Element} Element to render.
  */
-export default function Edit() {
+
+import metadata from './block.json';
+export default function Edit(props) {
+	console.log(props);
 	return (
-		<p { ...useBlockProps() }>
-			{ __( 'Block Waves – hello from the editor!', 'block-waves' ) }
-		</p>
+		<>
+
+			<p { ...useBlockProps() }>
+				{ __( 'Block Waves – hello from the editor!', 'block-waves' ) }
+			</p>
+
+			<InspectorControls>
+				<PanelBody title={__("Top curve", metadata.textdomain)}>
+					<div style={{display: "flex"}}>
+						<ToggleControl onChange={(isChecked) => {
+							props.setAttributes({
+								enableTopCurve: isChecked
+							});
+							}}
+							checked={props.attributes.enableTopCurve}/>
+							<span>{__("Enable top curve", metadata.textdomain)}</span>
+					</div>
+				</PanelBody>
+			</InspectorControls>
+		</>
 	);
 }
