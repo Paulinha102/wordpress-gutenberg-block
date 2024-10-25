@@ -36,3 +36,8 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 • Add a <PanelBody> to group related controls.<br>
 • Inside the PanelBody, create a <ToggleControl> to allow users to enable or disable the "Top Curve" setting.**
 
+## Step 9: Create a Directory for Components
+**Create a components directory inside src/blocks/curvy <br>
+• Inside the components directory, create a new file named curve.js <br>
+• This file will contain the logic and UI for rendering the curve component.**
+
