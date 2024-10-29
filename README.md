@@ -41,3 +41,6 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 • Inside the components directory, create a new file named curve.js <br>
 • This file will contain the logic and UI for rendering the curve component.**
 
+## Step 10: Implement Range Controls
+**Range controls for adjusting the width and height of the SVG**
+
