@@ -44,3 +44,5 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 ## Step 10: Implement Range Controls
 **Range controls for adjusting the width and height of the SVG**
 
+## Step 11: Implement Input Check for Flip
+**Add input controls to toggle vertical or horizontal flip**

@@ -41,7 +41,14 @@ export default function Edit(props) {
 		<>
 
 			<section className={`${className} alignfull`} {...blockProps}>
-				{props.attributes.enableTopCurve && <Curve height={props.attributes.topHeight} width={props.attributes.topWidth}/>}
+				{props.attributes.enableTopCurve && (
+					<Curve
+						flipX={props.attributes.topFlipX}
+						flipY={props.attributes.topFlipY}
+						height={props.attributes.topHeight}
+						width={props.attributes.topWidth}
+					/>
+					)}
 			</section>
 
 			<InspectorControls>
@@ -81,6 +88,25 @@ export default function Edit(props) {
 							}}
 							label={__("Height", metadata.textdomain)}/>
 
+						<HorizontalRule/>
+						<div style={{display: "flex"}}>
+							<ToggleControl onChange={(isChecked) => {
+								props.setAttributes({
+									topFlipX: isChecked
+								});
+							}}
+							checked={props.attributes.topFlipX}/>
+							<span>{__("Flip horizontally", metadata.textdomain)}</span>
+						</div>
+						<div style={{display: "flex"}}>
+							<ToggleControl onChange={(isChecked) => {
+								props.setAttributes({
+									topFlipY: isChecked
+								});
+							}}
+							checked={props.attributes.topFlipY}/>
+							<span>{__("Flip vertically", metadata.textdomain)}</span>
+						</div>
 					</>
 					}
 
