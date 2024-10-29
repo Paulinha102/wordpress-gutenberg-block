@@ -9,12 +9,44 @@
   "description": "Curve shape dividers to make dividing page content more interesting",
   "example": {},
   "supports": {
-    "html": false
+    "html": false,
+    "color": {
+      "background": true,
+      "link": true,
+      "text": true
+    },
+    "spacing": {
+      "padding": true
+    }
   },
   "attributes": {
+    "style": {
+      "type": "object",
+      "default": {
+        "color": {
+          "background": "#ec4899"
+        },
+        "spacing": {
+          "padding": {
+            "top": "80px",
+            "right": "50px",
+            "bottom": "80px",
+            "left": "50px"
+          }
+        }
+      }
+    },
     "enableTopCurve": {
       "type": "boolean",
       "default": true
+    },
+    "topWidth": {
+      "type": "number",
+      "default": 100
+    },
+    "topHeight": {
+      "type": "number",
+      "default": 0
     }
   },
   "textdomain": "block-waves",
