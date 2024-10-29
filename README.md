@@ -46,3 +46,6 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 
 ## Step 11: Implement Input Check for Flip
 **Add input controls to toggle vertical or horizontal flip**
+
+## Step 12: Implement ColorPalette
+**Add the ColorPalette component to apply colors to SVG**

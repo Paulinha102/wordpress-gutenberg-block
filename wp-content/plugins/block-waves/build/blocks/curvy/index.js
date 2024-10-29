@@ -40,7 +40,7 @@ const Curve = props => {
     viewBox: "0 0 1200 120"
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     style: {
-      fill: "white"
+      fill: props.color || "white"
     },
     d: props.flipY ? invertPath : normalPath
   })));
@@ -118,6 +118,7 @@ function Edit(props) {
     className: `${className} alignfull`,
     ...blockProps
   }, props.attributes.enableTopCurve && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_components_curve__WEBPACK_IMPORTED_MODULE_6__.Curve, {
+    color: props.attributes.topColor,
     flipX: props.attributes.topFlipX,
     flipY: props.attributes.topFlipY,
     height: props.attributes.topHeight,
@@ -177,7 +178,20 @@ function Edit(props) {
       });
     },
     checked: props.attributes.topFlipY
-  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Flip vertically", _block_json__WEBPACK_IMPORTED_MODULE_5__.textdomain)))))));
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("span", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Flip vertically", _block_json__WEBPACK_IMPORTED_MODULE_5__.textdomain))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.HorizontalRule, null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", null, (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)("Curve color", _block_json__WEBPACK_IMPORTED_MODULE_5__.textdomain)), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.ColorPalette
+  //disableCustomColors
+  // colors={[{
+  // 	name: "Yellow",
+  // 	color: "#ffff00"
+  // }]}
+  , {
+    value: props.attributes.topColor,
+    onChange: newValue => {
+      props.setAttributes({
+        topColor: newValue
+      });
+    }
+  }))))));
 }
 
 /***/ }),
@@ -356,7 +370,7 @@ module.exports = window["wp"]["i18n"];
   \*************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"block-waves/curvy","version":"0.1.0","title":"Block Waves","category":"widgets","icon":"smiley","description":"Curve shape dividers to make dividing page content more interesting","example":{},"supports":{"html":false,"color":{"background":true,"link":true,"text":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#ec4899"},"spacing":{"padding":{"top":"80px","right":"50px","bottom":"80px","left":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHeight":{"type":"number","default":0},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false}},"textdomain":"block-waves","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"block-waves/curvy","version":"0.1.0","title":"Block Waves","category":"widgets","icon":"smiley","description":"Curve shape dividers to make dividing page content more interesting","example":{},"supports":{"html":false,"color":{"background":true,"link":true,"text":true},"spacing":{"padding":true}},"attributes":{"style":{"type":"object","default":{"color":{"background":"#ec4899"},"spacing":{"padding":{"top":"80px","right":"50px","bottom":"80px","left":"50px"}}}},"enableTopCurve":{"type":"boolean","default":true},"topWidth":{"type":"number","default":100},"topHeight":{"type":"number","default":0},"topFlipX":{"type":"boolean","default":false},"topFlipY":{"type":"boolean","default":false},"topColor":{"type":"string","default":"#ffffff"}},"textdomain":"block-waves","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 
