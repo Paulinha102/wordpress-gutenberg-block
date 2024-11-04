@@ -49,3 +49,8 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 
 ## Step 12: Implement ColorPalette
 **Add the ColorPalette component to apply colors to SVG**
+
+## Step 13: Implement bottom curve
+**• First, create a component called TopCurveSetting and move the related code to the panel section.<br> 
+• Duplicate and rename it as BottomCurveSetting, updating the props to reflect bottom settings.<br> 
+• In block.json, duplicate the attributes related to the top curve for the bottom curve.**
