@@ -54,3 +54,7 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 **• First, create a component called TopCurveSetting and move the related code to the panel section.<br> 
 • Duplicate and rename it as BottomCurveSetting, updating the props to reflect bottom settings.<br> 
 • In block.json, duplicate the attributes related to the top curve for the bottom curve.**
+
+## Step 14: Implement innerBlock
+**• Import InnerBlocks from '@wordpress/block-editor' <br>
+• Edit the save function to store the content of the InnerBlocks component.**
