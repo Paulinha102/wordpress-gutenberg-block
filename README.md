@@ -58,3 +58,7 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 ## Step 14: Implement innerBlock
 **• Import InnerBlocks from '@wordpress/block-editor' <br>
 • Edit the save function to store the content of the InnerBlocks component.**
+
+## Step 15: Render block in page 
+**• Creat file render.php in src/blocks/curvy' <br>
+• Edit block.json add "render": "file:./render.php"**
