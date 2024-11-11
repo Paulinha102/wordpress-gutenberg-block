@@ -4,7 +4,7 @@
 	"name": "block-waves/curvy",
 	"version": "0.1.0",
 	"title": "Block Waves",
-	"category": "widgets",
+	"category": "block_waves",
 	"icon": "smiley",
 	"description": "Curve shape dividers to make dividing page content more interesting",
 	"example": {},
