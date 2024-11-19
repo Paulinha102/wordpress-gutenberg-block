@@ -71,3 +71,17 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 # Step 17: Transform a paragraph block into a curvy block
 **• In index.js, import createBlock from '@wordpress/blocks' <br>
 • Add the transformation code inside the inner function of registerBlockType**
+
+# Step 18: Create block variations
+**• In block.json, add code to variations: <br>**
+
+    "variations": [
+        {
+            "name": "top-only",
+            "title": "Curvy - top only",
+            "attributes": {
+                "enableTopCurve": true,
+                "enableBottomCurve": false
+            }
+        }
+    ]
