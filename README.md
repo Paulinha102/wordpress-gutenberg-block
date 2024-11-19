@@ -63,7 +63,11 @@ Desenvolvimento de blocos WordPress Gutenberg com React JS e PHP
 **• Creat file render.php in src/blocks/curvy' <br>
 • Edit block.json add "render": "file:./render.php"**
 
-# How to Create a Custom Category
+# Step 16: How to Create a Custom Category
 **• Add the block_categories_all filter and insert the new custom category at the beginning of the categories array ' <br>
 • Create an assets directory, and save the SVG file for the icon in this folder<br>
 • In the src/blocks/curvy/index.js file, set the SVG image as the icon for this block**
+
+# Step 17: Transform a paragraph block into a curvy block
+**• In index.js, import createBlock from '@wordpress/blocks' <br>
+• Add the transformation code inside the inner function of registerBlockType**
